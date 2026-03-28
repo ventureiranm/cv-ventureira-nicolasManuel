@@ -82,11 +82,11 @@ contactForm.addEventListener('submit', function(e) {
 
     // Validación básica
     if(nombre && email && mensaje) {
-        formStatus.innerHTML = "¡Enviando mensaje...";
+        formStatus.innerHTML = "Enviando mensaje...";
         formStatus.style.color = "#FBBC05";
 
         setTimeout(() => {
-            formStatus.innerHTML = "Mensaje enviado correctamente. Sundar (o el dev) te contactará pronto.";
+            formStatus.innerHTML = "Mensaje enviado correctamente. Se te contactará pronto.";
             formStatus.style.color = "#34A853";
             
             // Aquí se usaría el mailto si se quisiera abrir el gestor de correo
