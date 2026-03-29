@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolás Ventureira — CV Online</title>
+  <meta name="description" content="CV interactivo de Nicolás Manuel Ventureira, CEO de Google y Alphabet." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">NV<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+      <li><a href="#educacion" class="nav-link">Educación</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================
+       HERO / HEADER
+  ============================ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <!-- Foto de perfil -->
+      <div class="avatar-wrapper fade-in delay-1">
+        <div class="avatar-ring"></div>
+        <img
+          src="https://ui-avatars.com/api/?name=Nicolas+Ventureira&size=200&background=1a1a2e&color=c9a84c&font-size=0.35&bold=true"
+          alt="Foto de perfil de Nicolás Ventureira"
+          class="avatar-img"
+        />
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow fade-in delay-2">CEO · Tech Leader · Innovador</p>
+        <h1 class="hero-name fade-in delay-3">
+          Nicolás<br />
+          <span class="gold">Manuel Ventureira</span>
+        </h1>
+        <p class="hero-desc fade-in delay-4">
+          Apasionado por la tecnología que democratiza la información. Líder global en Inteligencia Artificial y plataformas que impactan miles de millones de vidas.
+        </p>
+        <div class="hero-badges fade-in delay-5">
+          <span class="badge">Google</span>
+          <span class="badge">Alphabet</span>
+          <span class="badge">AI</span>
+          <span class="badge">Cloud</span>
+        </div>
+        <div class="hero-actions fade-in delay-6">
+          <a href="#contacto" class="btn btn-primary">Contactar</a>
+          <a href="#proyectos" class="btn btn-outline">Ver proyectos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator fade-in delay-6">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       DATOS PERSONALES
+  ============================ -->
+  <section class="section personal-data" id="sobre-mi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 01</span>
+        <h2 class="section-title">Datos Personales</h2>
+      </div>
+
+      <div class="personal-grid">
+        <!-- Tarjeta de dato -->
+        <div class="data-card reveal">
+          <div class="data-icon">📅</div>
+          <div class="data-info">
+            <span class="data-label">Fecha de nacimiento</span>
+            <span class="data-value">04 / 11 / 1994</span>
+          </div>
+        </div>
+        <div class="data-card reveal">
+          <div class="data-icon">📍</div>
+          <div class="data-info">
+            <span class="data-label">Ubicación</span>
+            <span class="data-value">Mountain View, California</span>
+          </div>
+        </div>
+        <div class="data-card reveal">
+          <div class="data-icon">✉️</div>
+          <div class="data-info">
+            <span class="data-label">Email</span>
+            <span class="data-value">n.ventureira@google.com</span>
+          </div>
+        </div>
+        <div class="data-card reveal">
+          <div class="data-icon">📞</div>
+          <div class="data-info">
+            <span class="data-label">Teléfono</span>
+            <span class="data-value">+1 (650) 555-0142</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sobre mí texto -->
+      <div class="about-text reveal">
+        <p>
+          Me uní a Google en 2014, donde lideré el desarrollo de productos icónicos como Google Chrome y Chrome OS.
+          Hoy, como líder de Google y Alphabet, me enfoco en la Inteligencia Artificial y en construir plataformas
+          que mejoren la vida de miles de millones de personas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       EXPERIENCIA LABORAL
+  ============================ -->
+  <section class="section experience-section" id="experiencia">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 02</span>
+        <h2 class="section-title">Experiencia Profesional</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">CEO — Alphabet Inc.</h3>
+                <span class="company">Alphabet Inc.</span>
+              </div>
+              <span class="period">2019 — Presente</span>
+            </div>
+            <p class="job-desc">
+              Sucediendo a Larry Page, asume la dirección total del conglomerado tecnológico. Supervisa todas las empresas subsidiarias incluyendo Google, Waymo, DeepMind y Verily. Responsable de la estrategia global corporativa, relaciones con inversores y visión a largo plazo del grupo.
+            </p>
+            <div class="job-tags">
+              <span class="tag">Liderazgo ejecutivo</span>
+              <span class="tag">Estrategia corporativa</span>
+              <span class="tag">M&A</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">CEO — Google</h3>
+                <span class="company">Google LLC</span>
+              </div>
+              <span class="period">2015 — Presente</span>
+            </div>
+            <p class="job-desc">
+              Liderazgo global de Google tras la reestructuración corporativa que dio origen a Alphabet. Gestión de más de 100.000 empleados. Impulsó la estrategia de IA con proyectos como Google Bard, Gemini y Google Cloud AI, posicionando a la empresa como líder mundial en Inteligencia Artificial.
+            </p>
+            <div class="job-tags">
+              <span class="tag">Google Cloud</span>
+              <span class="tag">IA & ML</span>
+              <span class="tag">Gestión global</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Product Chief (SVP of Products)</h3>
+                <span class="company">Google Inc.</span>
+              </div>
+              <span class="period">2014 — 2015</span>
+            </div>
+            <p class="job-desc">
+              Supervisión integral de Android, Chrome, Chrome OS, Google Apps y Google Maps. Coordinó equipos multidisciplinarios para garantizar la integración de los productos y la coherencia de la experiencia de usuario. Lideró el lanzamiento de Chrome OS en mercados educativos globales.
+            </p>
+            <div class="job-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Chrome OS</span>
+              <span class="tag">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       EDUCACIÓN
+  ============================ -->
+  <section class="section education-section" id="educacion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 03</span>
+        <h2 class="section-title">Educación</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-year">2002 — 2004</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">M.S. en Ingeniería Informática</h3>
+            <span class="edu-school">Stanford University</span>
+            <p class="edu-desc">Especialización en sistemas distribuidos y arquitectura de software. Tesis sobre optimización de motores de búsqueda a gran escala.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">1999 — 2002</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">M.B.A.</h3>
+            <span class="edu-school">Wharton School — University of Pennsylvania</span>
+            <p class="edu-desc">Programa ejecutivo en gestión de negocios tecnológicos y estrategia de innovación corporativa.</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">1993 — 1997</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">B.S. en Ingeniería Eléctrica</h3>
+            <span class="edu-school">IIT Kharagpur</span>
+            <p class="edu-desc">Graduado con honores. Base sólida en electrónica, señales y computación. Premio al mejor egresado de la cohorte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       HABILIDADES
+  ============================ -->
+  <section class="section skills-section" id="habilidades">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 04</span>
+        <h2 class="section-title">Habilidades Técnicas</h2>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Barras de progreso -->
+        <div class="skills-bars reveal">
+          <h3 class="skills-subtitle">Lenguajes y Frameworks</h3>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span>Python</span><span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-pct="92"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span>Java</span><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span>Spring Framework</span><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-pct="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span>Django</span><span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-pct="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span>MySQL</span><span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-pct="88"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjetas de herramientas -->
+        <div class="skills-tools reveal">
+          <h3 class="skills-subtitle">Herramientas y Tecnologías</h3>
+          <div class="tools-grid">
+            <div class="tool-chip">
+              <span class="tool-icon">🐙</span>Git
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🐳</span>Docker
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">☁️</span>AWS Cloud
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🔐</span>JWT Auth
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🛡️</span>HTTPS / SSL
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🐧</span>Linux
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🌐</span>Redes
+            </div>
+            <div class="tool-chip">
+              <span class="tool-icon">🔒</span>Ciberseguridad
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PROYECTOS
+  ============================ -->
+  <section class="section projects-section" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 05</span>
+        <h2 class="section-title">Proyectos Destacados</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">IA Generativa</div>
+          <h3 class="project-title">Gemini Ultra — Motor de IA Multimodal</h3>
+          <p class="project-desc">
+            Lideré el equipo de investigación que desarrolló Gemini Ultra, el modelo de lenguaje más avanzado de Google. Integración multimodal de texto, imagen, audio y video con capacidades de razonamiento complejo.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>TensorFlow</span><span>Google Cloud</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">Cloud & DevOps</div>
+          <h3 class="project-title">Google Cloud AI Platform 2.0</h3>
+          <p class="project-desc">
+            Rediseño integral de la plataforma de Machine Learning en la nube. Reducción del tiempo de entrenamiento de modelos en un 40% mediante infraestructura distribuida con Docker y orquestación automatizada en AWS.
+          </p>
+          <div class="project-tech">
+            <span>Docker</span><span>AWS</span><span>Kubernetes</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">Seguridad</div>
+          <h3 class="project-title">Project Shield — Ciberseguridad Global</h3>
+          <p class="project-desc">
+            Iniciativa de protección contra ataques DDoS para ONGs, medios de comunicación y gobiernos. Implementación de certificados SSL avanzados, autenticación JWT y tunneling seguro sobre Linux para más de 3.000 organizaciones.
+          </p>
+          <div class="project-tech">
+            <span>SSL/HTTPS</span><span>JWT</span><span>Linux</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">Backend</div>
+          <h3 class="project-title">API de Traducción Neural — Google Translate v3</h3>
+          <p class="project-desc">
+            Arquitectura backend de nueva generación para Google Translate usando Spring Boot y Django REST. Soporte para 200+ idiomas con modelos transformer. Base de datos MySQL distribuida con replicación multi-región.
+          </p>
+          <div class="project-tech">
+            <span>Java / Spring</span><span>Django</span><span>MySQL</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">Educación Tech</div>
+          <h3 class="project-title">Google for Education — IA en el Aula</h3>
+          <p class="project-desc">
+            Programa de integración de herramientas de IA en entornos educativos K-12 y universitarios. Desarrollado con Python, implementado en 50 países y más de 100 millones de estudiantes beneficiados.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Git</span><span>Google Cloud</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-tag-top">Infraestructura</div>
+          <h3 class="project-title">Redes Neuronales de Infraestructura Global</h3>
+          <p class="project-desc">
+            Diseño y despliegue de la red de centros de datos de próxima generación de Google. Optimización de redes de fibra óptica submarina y protocolos de seguridad de capa física con foco en soberanía digital.
+          </p>
+          <div class="project-tech">
+            <span>Redes</span><span>Linux</span><span>AWS</span>
+          </div>
+          <a href="#" class="project-link">Ver detalles →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FORMULARIO DE CONTACTO
+  ============================ -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">/ 06</span>
+        <h2 class="section-title">Contacto</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <h3>¿Hablamos?</h3>
+          <p>Estoy disponible para colaboraciones, conferencias y consultoría estratégica en tecnología e Inteligencia Artificial.</p>
+          <div class="contact-links">
+            <a href="mailto:n.ventureira@google.com" class="contact-link-item">
+              <span class="cl-icon">✉️</span>n.ventureira@google.com
+            </a>
+            <a href="tel:+16505550142" class="contact-link-item">
+              <span class="cl-icon">📞</span>+1 (650) 555-0142
+            </a>
+            <span class="contact-link-item">
+              <span class="cl-icon">📍</span>Mountain View, California
+            </span>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" autocomplete="name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="+54 9 11 0000-0000" autocomplete="tel" />
+            <span class="form-error" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Enviar mensaje</span>
+            <span class="btn-loader" id="btnLoader" style="display:none;">Enviando...</span>
+          </button>
+
+          <!-- Mensaje de éxito -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <span class="success-icon">✅</span>
+            <p>¡Mensaje enviado con éxito! Me comunicaré contigo en breve.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">NV<span class="dot">.</span></div>
+        <p class="footer-name">Nicolás Manuel Ventureira</p>
+        <p class="footer-copy">© 2025 · Todos los derechos reservados</p>
+        <div class="footer-disclaimer">
+          <p>
+            ⚠️ <strong>Aviso académico:</strong> La información, datos personales, cargos, empresas y proyectos presentados en este CV son <strong>completamente ficticios</strong> y han sido generados con fines exclusivamente académicos y de demostración técnica. Cualquier semejanza con personas, empresas o situaciones reales es mera coincidencia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
