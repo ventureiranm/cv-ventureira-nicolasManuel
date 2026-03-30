@@ -2,4 +2,4 @@
 - Apellido y nombre:
   Ventureira Nicolas Manuel 
 - URL Proyecto:
-  https://ventureiranm.github.io/cvOnlineExample/
+  https://ventureiranm.github.io/cv-ventureira-nicolasManuel/
