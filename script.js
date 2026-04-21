@@ -123,32 +123,27 @@
 ───────────────────────────────────────── */
 (function initSkillBars() {
   /**
-   * Selecciona todos los elementos <progress class="skill-progress">.
-   * Cuando entran en el viewport, se anima su atributo `value`
-   * desde 0 hasta el valor final definido en `data-pct`.
-   * La transición visual la maneja CSS sobre ::-webkit-progress-value
-   * y ::-moz-progress-bar.
+   * Las barras de habilidad (.skill-fill) tienen un atributo
+   * `data-pct` con el porcentaje final.
+   * Se animan cuando entran en el viewport, cambiando su `width`.
    */
-  const bars = document.querySelectorAll('.skill-progress');
-  if (!bars.length) return;
+  const fills = document.querySelectorAll('.skill-fill');
+  if (!fills.length) return;
 
   const barObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        const bar = entry.target;
-        // Leer el porcentaje final desde el atributo data-pct del padre .skill-bar-item
-        // o desde el aria-label como fallback
-        const pct = bar.getAttribute('data-pct') ||
-                    parseInt(bar.getAttribute('aria-label')) || 0;
-        // Setear value dispara la transición CSS en webkit y moz
-        bar.value = pct;
-        barObserver.unobserve(bar);
+        const target = entry.target;
+        const pct    = target.getAttribute('data-pct') || '0';
+        // Aplicar el ancho para disparar la transición CSS
+        target.style.width = pct + '%';
+        barObserver.unobserve(target);
       }
     });
   }, { threshold: 0.3 });
 
-  bars.forEach(function (bar) {
-    barObserver.observe(bar);
+  fills.forEach(function (fill) {
+    barObserver.observe(fill);
   });
 })();
 
