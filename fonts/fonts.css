@@ -1,0 +1,13 @@
+/* ============================================================
+   fonts/fonts.css — Fuente local del proyecto
+   DM Sans descargada desde Google Fonts y servida de forma
+   local para evitar dependencia de servicios externos.
+   ============================================================ */
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('DMSans-Regular.woff2') format('woff2');
+}
