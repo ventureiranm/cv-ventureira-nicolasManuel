@@ -42,7 +42,23 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  /* Base móvil — todos los rem escalan desde este valor */
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  html { font-size: 15px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  html { font-size: 16px; }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1440px) {
+  html { font-size: 17px; }
 }
 
 body {
@@ -69,9 +85,7 @@ img {
   max-width: 100%;
 }
 
-/* ─────────────────────────────────────────
-   UTILIDADES
-───────────────────────────────────────── */
+
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
@@ -86,11 +100,6 @@ img {
   color: var(--accent-color);
 }
 
-/* ─────────────────────────────────────────
-   ANIMACIONES DE APARICIÓN
-───────────────────────────────────────── */
-
-/* fade-in para el hero */
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
@@ -107,7 +116,7 @@ img {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* reveal al hacer scroll */
+
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -118,9 +127,7 @@ img {
   transform: translateY(0);
 }
 
-/* ─────────────────────────────────────────
-   NAVBAR
-───────────────────────────────────────── */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -134,7 +141,7 @@ img {
   transition: background 0.4s var(--transition-ease), padding 0.3s;
 }
 
-/* Estado scrolleado */
+
 .navbar.scrolled {
   background: rgba(10, 10, 20, 0.92);
   backdrop-filter: blur(16px);
@@ -185,7 +192,7 @@ img {
   color: var(--bg-page-color) !important;
 }
 
-/* Hamburger menú (mobile) */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -207,9 +214,7 @@ img {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ─────────────────────────────────────────
-   HERO
-───────────────────────────────────────── */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -220,7 +225,7 @@ img {
   overflow: hidden;
 }
 
-/* Grilla decorativa de fondo */
+
 .hero-bg-grid {
   position: absolute;
   inset: 0;
@@ -231,7 +236,7 @@ img {
   pointer-events: none;
 }
 
-/* Resplandor central */
+
 .hero-glow {
   position: absolute;
   top: 30%;
@@ -253,7 +258,7 @@ img {
   margin: 0 auto;
 }
 
-/* Avatar */
+
 .avatar-wrapper {
   position: relative;
   flex-shrink: 0;
@@ -280,7 +285,7 @@ img {
   object-fit: cover;
 }
 
-/* Texto hero */
+
 .hero-text {
   flex: 1;
 }
@@ -336,7 +341,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* Botones */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -378,7 +383,7 @@ img {
   width: 100%;
 }
 
-/* Scroll indicator */
+
 .scroll-indicator {
   position: absolute;
   bottom: 2.5rem;
@@ -414,9 +419,7 @@ img {
   50%       { transform: translate(-50%,-50%) scale(1.5); opacity: 0; }
 }
 
-/* ─────────────────────────────────────────
-   SECCIONES — BASE
-───────────────────────────────────────── */
+
 .section {
   padding: var(--section-padding);
   position: relative;
@@ -451,9 +454,7 @@ img {
   line-height: 1.1;
 }
 
-/* ─────────────────────────────────────────
-   DATOS PERSONALES
-───────────────────────────────────────── */
+
 .personal-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -507,9 +508,7 @@ img {
   padding-left: 1.5rem;
 }
 
-/* ─────────────────────────────────────────
-   TIMELINE — EXPERIENCIA
-───────────────────────────────────────── */
+
 .timeline {
   position: relative;
 }
@@ -615,9 +614,7 @@ img {
   border: 1px solid rgba(74, 122, 255, 0.2);
 }
 
-/* ─────────────────────────────────────────
-   EDUCACIÓN
-───────────────────────────────────────── */
+
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -673,9 +670,7 @@ img {
   line-height: 1.65;
 }
 
-/* ─────────────────────────────────────────
-   HABILIDADES
-───────────────────────────────────────── */
+
 .skills-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -691,7 +686,7 @@ img {
   margin-bottom: 2rem;
 }
 
-/* Barras */
+
 .skill-bar-item {
   margin-bottom: 1.6rem;
 }
@@ -724,7 +719,7 @@ img {
   transition: width 1.2s var(--transition-ease);
 }
 
-/* Tools grid */
+
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -753,9 +748,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* ─────────────────────────────────────────
-   PROYECTOS
-───────────────────────────────────────── */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -776,7 +769,7 @@ img {
   transform: translateY(-6px);
 }
 
-/* Resplandor en hover */
+
 .project-glow {
   position: absolute;
   top: -40px;
@@ -850,9 +843,7 @@ img {
   color: var(--accent-color);
 }
 
-/* ─────────────────────────────────────────
-   CONTACTO
-───────────────────────────────────────── */
+
 .contact-section {
   background: var(--bg-section-color);
 }
@@ -901,7 +892,7 @@ img {
   flex-shrink: 0;
 }
 
-/* Formulario */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -946,7 +937,7 @@ img {
   border-color: var(--accent-color);
 }
 
-/* Estado de error */
+
 .form-group input.error,
 .form-group textarea.error {
   border-color: #e74c3c;
@@ -958,7 +949,7 @@ img {
   min-height: 1em;
 }
 
-/* Mensaje de éxito */
+
 .form-success {
   display: flex;
   align-items: center;
@@ -978,9 +969,7 @@ img {
   color: #2ecc71;
 }
 
-/* ─────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────── */
+
 .footer {
   padding: 3.5rem 0 2.5rem;
   border-top: 1px solid var(--border-color);
@@ -1029,9 +1018,7 @@ img {
   color: rgba(255, 200, 0, 0.6);
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — TABLET
-───────────────────────────────────────── */
+
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column;
@@ -1063,15 +1050,13 @@ img {
   }
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — MOBILE
-───────────────────────────────────────── */
+
 @media (max-width: 640px) {
   :root {
     --section-padding: 5rem 0;
   }
 
-  /* Navbar mobile */
+  
   .hamburger {
     display: flex;
     z-index: 1100;
